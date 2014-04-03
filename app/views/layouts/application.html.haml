@@ -14,8 +14,9 @@
           %ul.nav
             %li= link_to "Neodesign", neodesign_path
             %li= link_to "Aktualności", '#' # news_path
-            %li= link_to "Projekty", '#'   # projects_path
+            %li= link_to "Projekty", projects_path
             %li= link_to "Kontakt", contact_path
       #header_filling
       #content
         = yield
+        = debug(params) if Rails.env.development?

@@ -1,5 +1,7 @@
 NeodesignArch::Application.routes.draw do
   
+  resources :projects
+
   root to: 'static_pages#home'
   match '/neodesign', to: 'static_pages#about',   via: 'get'
   match '/contact',   to: 'static_pages#contact', via: 'get'

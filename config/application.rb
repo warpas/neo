@@ -48,11 +48,11 @@ module NeodesignArch
     # like if you have constraints or database-specific column types
     # config.active_record.schema_format = :sql
 
-    config.generators do |g|
-      g.template_engine :haml
-      g.test_framework :rspec, :fixture => true, :views => false
-      g.fixture_replacement :factory_girl, :dir => "spec/factories"
-    end
+    # config.generators do |g|
+    #   g.template_engine :haml
+    #   g.test_framework :rspec, :fixture => true, :views => false
+    #   g.fixture_replacement :factory_girl, :dir => "spec/factories"
+    # end
 
     # Enforce whitelist mode for mass assignment.
     # This will create an empty whitelist of attributes available for mass-assignment for all models

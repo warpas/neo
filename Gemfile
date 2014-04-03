@@ -16,6 +16,7 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.5.1'
+  gem 'annotate', '2.5.0'
 end
 
 group :test do
@@ -39,7 +40,7 @@ end
 
 group :production do
   gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+  # gem 'rails_12factor', '0.0.2'
 end
 
 # Gems used only for assets and not required
