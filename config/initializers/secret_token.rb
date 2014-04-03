@@ -19,4 +19,4 @@ def secure_token
   end
 end
 
-NeodesignArch::Application.config.secret_key_base = secure_token
+NeodesignArch::Application.config.secret_token = secure_token

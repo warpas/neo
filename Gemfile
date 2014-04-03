@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'rails', '3.2.17'
 gem "activeadmin", github: "gregbell/active_admin"
+gem 'haml', '4.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

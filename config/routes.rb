@@ -1,4 +1,9 @@
 NeodesignArch::Application.routes.draw do
+  
+  root to: 'static_pages#home'
+  match '/neodesign', to: 'static_pages#about',   via: 'get'
+  match '/contact',   to: 'static_pages#contact', via: 'get'
+
   devise_for :users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 

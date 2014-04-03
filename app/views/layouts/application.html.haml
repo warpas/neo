@@ -1,0 +1,21 @@
+!!! XHTML 5
+%html
+  %head
+    %title= full_title(yield(:title))
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+
+  %body
+    #container
+      %header
+        = link_to image_tag('logo.jpg', alt: 'Logo Neodesign', id: 'logo'), root_path
+        %nav
+          %ul.nav
+            %li= link_to "Neodesign", neodesign_path
+            %li= link_to "Aktualności", '#' # news_path
+            %li= link_to "Projekty", '#'   # projects_path
+            %li= link_to "Kontakt", contact_path
+      #header_filling
+      #content
+        = yield
