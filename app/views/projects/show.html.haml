@@ -1,0 +1,10 @@
+= provide(:title, "#{@project.title}")
+
+.project_wrapper
+  .images_wrapper
+    = image_tag "projects/wroclaw-restauracja-1-min.jpg"
+    = image_tag "projects/rest-wroc2-min.jpg"
+  .project_details
+    %h2= @project.title
+    %p= @project.short_desc.html_safe
+    %p= @project.long_desc.html_safe

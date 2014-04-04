@@ -1,3 +1,5 @@
+/* universal */
+
 * {
   margin: 0;
 }
@@ -14,6 +16,8 @@ html {
 body {
 }
 
+/* header */
+
 #container {
   width: 950px;
   margin: 0 auto;
@@ -21,10 +25,9 @@ body {
 }
 
 header {
-  height: 208px;
+  height: 200px;
   width: 100%;
   padding-top: 40px;
-  padding-bottom: 20px;
   z-index: 1;
   position: fixed;
   background: #fff;
@@ -51,11 +54,22 @@ header {
 #header_filling {
   height: 208px;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
 }
 
 #content {
+  padding-top: 13px;
 }
+
+/* debug */
+
+.debug_dump {
+  height: 100px;
+  width: 950px;
+  margin-top: 100px;
+}
+
+/* About page */
 
 #organization_wrapper {
   width: 100%;
@@ -70,7 +84,6 @@ header {
   width: 390px;
   float: right;
   border-top: 1px solid #c6c6c6;
-  padding-top: 13px;
   text-align: justify;
   font-size: 12px;
   color: #444;
@@ -82,5 +95,15 @@ header {
   a {
     text-decoration: none;
     color: #e80927;
+  }
+}
+
+/* Projects page */
+
+/* Individual project pages */
+
+.project_details {
+  span {
+    vertical-align: super;
   }
 }
