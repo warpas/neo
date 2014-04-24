@@ -1,3 +1,5 @@
+@import "http://fonts.googleapis.com/css?family=Armata";
+
 /* universal */
 
 * {
@@ -14,6 +16,11 @@ html {
 }
 
 body {
+}
+
+.font_spec {
+  font-family: 'Armata', sans-serif;
+  font-size: 10px;
 }
 
 /* header */
@@ -83,14 +90,15 @@ header {
 #organization {
   width: 390px;
   float: right;
+  padding-top: 13px;
   border-top: 1px solid #c6c6c6;
   text-align: justify;
-  font-size: 12px;
+  font-size: 10px;
   color: #444;
 }
 
 #address_wrapper {
-  font-size: 14px;
+  font-size: 10px;
   color: #666;
   a {
     text-decoration: none;
@@ -102,8 +110,52 @@ header {
 
 /* Individual project pages */
 
-.project_details {
-  span {
-    vertical-align: super;
+.project_wrapper {
+  margin-top: 30px;
+}
+
+.images_wrapper {
+  float: left;
+  width: 300px;
+  img {
+    padding: 4px 0 0;
+    &:first-child {
+      padding: 0;
+    }
   }
+}
+
+.project_details {
+  width: 450px;
+  float: right;
+  color: #666;
+  h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-top: 15px;
+  }
+  span {
+    font-size: 9px;
+  }
+}
+
+.the_line {
+  width: 100%;
+  border-top: 1px solid #8a8a8a;
+}
+
+.project_close {
+  clear: both;
+  float: right;
+  margin-top: -47px;
+}
+
+.clearing_box {
+  height: 1px;
+  width: 100px;
+  clear: both;
 }

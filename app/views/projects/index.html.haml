@@ -1,6 +1,6 @@
-= provide(:title, "Projekty")
+= provide(:title, 'projekty')
 
 %ul
   - @projects.each do |project| 
     %li
-      = link_to project.title, project_path(project)
+      = link_to project.imgcode, project_path(project)

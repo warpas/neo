@@ -9,6 +9,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  location   :string(255)
+#  imgcode    :string(255)
 #
 
 require 'spec_helper'
@@ -16,7 +17,7 @@ require 'spec_helper'
 describe Project do
 
   before { @project = Project.new(title: "Restauracja z hotelem", short_desc: "powierzchnia użytkowa ok. 2 000 m2 stadium: Projekt Koncepcyjny",
-    location: "Wrocław") }
+    location: "Wrocław", imgcode: "wrocław-restauracja-53") }
 
   subject { @project }
 
@@ -24,6 +25,7 @@ describe Project do
   it { should respond_to(:short_desc) }
   it { should respond_to(:long_desc) }
   it { should respond_to(:location) }
+  it { should respond_to(:imgcode) }
 
   it { should be_valid }
 
@@ -46,12 +48,29 @@ describe Project do
       project_with_same_title.save
     end
 
-    it { should_not be_valid }
+    it { should be_valid }
   end
 
   describe "when location is missing" do
     before { @project.location = "" }
 
     it { should_not be_valid }
+  end
+
+  describe "when imgcode is missing" do
+    before { @project.imgcode = "" }
+
+    it { should_not be_valid }
+  end
+
+  describe "when imgcode isn't right" do
+    before { @project.imgcode = "wrongcode" }
+
+    it { should_not be_valid }
+  end
+
+  describe "when imgcode is correct" do
+    before do
+    end
   end
 end

@@ -11,7 +11,7 @@ describe "Project pages" do
       visit projects_path
     end
 
-    it { should have_title("Projekty") }
+    it { should have_title("projekty") }
 
     it "should list each user" do
       Project.all.each do |project|

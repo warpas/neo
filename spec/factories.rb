@@ -4,5 +4,6 @@ FactoryGirl.define do
     short_desc  "this is a short description"
     long_desc   "this is the very much longer description"
     location    "Wrocław"
+    imgcode     "wrocław-example-12"
   end  
 end
